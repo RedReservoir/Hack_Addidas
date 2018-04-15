@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alien_project_layout_main_cnsly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/alien_project_layout_appbarlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/alien_project_layout_tlb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Project">
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/alien_project_layout_main_nstscrvw"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/alien_project_layout_buttons_relly"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alien_project_layout_appbarlay"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/alien_project_layout_main_lnly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alien_project_layout_title_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="Project : Project Title"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/alien_project_layout_desc_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorBackgroundDark"
+                android:gravity="top|left"
+                android:padding="8dp"
+                android:textCursorDrawable="@null"></TextView>
+
+            <TextView
+                android:id="@+id/alien_project_layout_hashtags_txtvw"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorBackgroundDark"
+                android:gravity="top|left"
+                android:padding="8dp"
+                android:textCursorDrawable="@null"></TextView>
+
+            <LinearLayout
+                android:id="@+id/alien_project_layout_location_lnlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ub.edu.pis2017.pis_17.synergy.View.IconTextView
+                    android:id="@+id/alien_project_layout_location_ictxtvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/icon_location"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/alien_project_layout_location_txtvw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/placeholder"
+                    android:textSize="12dp"
+                    android:autoSizeTextType="uniform"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/alien_project_layout_participants_txtvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="Participants"
+                android:textSize="32dp" />
+
+            <ListView
+                android:id="@+id/alien_project_layout_vacants_lstvw"
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:nestedScrollingEnabled="true">
+            </ListView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/alien_project_layout_buttons_relly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/alien_project_layout_chat_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_message" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/alien_project_layout_flag_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_flag" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/alien_project_layout_accept_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_check_24dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bcaaa4</color>
+    <color name="colorPrimaryLight">#efdcd5</color>
+    <color name="colorPrimaryDark">#8c7b75</color>
+    <color name="colorAccent">#ffb300</color>
+    <color name="colorAccentLight">#ffe54c</color>
+    <color name="colorAccentDark">#c68400</color>
+    <color name="textColorPrimary">#000</color>
+    <color name="textColorPrimaryInverse">#F00</color>
+    <color name="textColorSecondaryInverse">#F00</color>
+    <color name="textColorSecondary">#000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundDark">#FAFAFA</color>
+    <color name="colorForeground">#F00</color>
+    <color name="navigationBarColor">#8c7b75</color>
+    <color name="Hyperlink">#0645AD</color>
+    <!-- <color name="colorAccent">#FF4081</color> -->
+
+    <!--color name="colorOffer">#59b55f</color>
+    <color name="colorRequest">#F64242</color>
+    <color name="colorTeams">#4f769a</color>
+    <-color name="colorBackground">#fefefe</color-->
+
+    <!--color name="primary_material_dark_1">#212121</color-->
+    <!--color name="colorDiscreet">#444444</color-->
+    <!--color name="colorAccept">#009E60</color-->
+    <!--color name="colorWritable">#F3F3F3</color-->
+    <!--color name="colorTools">#45a2a2</color-->
+    <!--color name="colorHashtagBackground">#ffefbd</color> < Falta decidir -->
+    <!--color name="colorProfileBackground">#ffefbd</color-->
+    <!--color name="colorButtonUpload">#E5E7E9</color-->
+    <!--color name="colorToolbar">#e5e7e9</color-->
+    <!--color name="colorHyperlink">#0000ee</color-->
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ub.edu.pis2017.pis_17.synergy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Custom">
+        <activity android:name=".View.sign_in.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>/>
+        </activity>
+        <activity android:name=".View.sign_in.SignInActivity1"></activity>
+        <activity android:name=".View.sign_in.SignInActivity2"
+            android:parentActivityName=".View.sign_in.SignInActivity1"/>
+        <activity android:name=".View.sign_in.SignInActivity3"
+            android:parentActivityName=".View.sign_in.SignInActivity2"/>
+        <activity android:name=".View.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>/>
+        </activity>
+        <activity android:name=".View.post.NewProjectActivity"
+            android:parentActivityName=".View.main.MainActivity"/>
+        <activity android:name=".View.post.NewOfferActivity"
+            android:parentActivityName=".View.main.MainActivity"/>
+        <activity android:name=".View.post.NewRequestActivity"
+            android:parentActivityName=".View.main.MainActivity"/>
+        <activity android:name=".View.profile.OpcionesActivity"
+            android:parentActivityName=".View.profile.UserProfileActivity"/>
+        <activity android:name=".View.profile.UserProfileActivity"
+            android:parentActivityName=".View.main.MainActivity"/>
+        <activity android:name=".View.profile.AlienProfileActivity"/>
+        <activity android:name=".View.profile.UserEditProfileActivity"
+            android:parentActivityName=".View.profile.UserProfileActivity"/>
+        <activity android:name=".View.profile.InboxActivity"
+            android:parentActivityName=".View.profile.UserProfileActivity"/>
+        <activity android:name=".View.profile.HistoryActivity"
+            android:parentActivityName=".View.profile.UserProfileActivity"/>
+        <activity android:name=".View.post.AlienOfferActivity"
+            android:parentActivityName=".View.main.MainActivity"/>
+        <activity android:name=".View.post.AlienRequestActivity"
+            android:parentActivityName=".View.main.MainActivity"/>
+        <activity android:name=".View.post.AlienProjectActivity"
+            android:parentActivityName=".View.main.MainActivity">
+        </activity>
+        <activity android:name=".View.post.ModifyOfferActivity"
+            android:parentActivityName=".View.profile.HistoryActivity"/>
+        <activity android:name=".View.post.SendMessagePopup"/>
+    </application>
+
+</manifest>

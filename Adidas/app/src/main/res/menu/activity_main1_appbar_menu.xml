@@ -11,19 +11,4 @@
         app:actionViewClass="android.support.v7.widget.SearchView"
         />
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="2"
-        android:title="Settings"
-        android:icon="@drawable/ic_camera_48pt_2x"
-        app:showAsAction="always">
-        <menu>
-            <item
-                android:title="Option 1"
-                android:id="@+id/option1"/>
-            <item
-                android:title="Option 2"
-                android:id="@+id/option2"/>
-        </menu>
-    </item>
 </menu>

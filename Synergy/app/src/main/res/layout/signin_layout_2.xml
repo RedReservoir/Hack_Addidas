@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/signin_layout_2_main_lnlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/signin_layout_2_take_photo_txtvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/upload_photo"
+            android:textSize="32dp" />
+
+        <ImageView
+            android:id="@+id/signin_layout_2_profile_photo_imgvw"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:id="@+id/signin_layout_2_photo_input_lnlay"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/signin_layout_2_camera_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/camera_button_text"
+                android:textColor="@android:color/secondary_text_light"
+                android:drawableBottom="@drawable/ic_camera_48pt_2x"
+                android:background="@android:drawable/btn_default"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id="@+id/signin_layout_2_gallery_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/secondary_text_light"
+                android:text="@string/gallery_button_text"
+                android:drawableBottom="@drawable/ic_insert_photo_black_48dp"
+                android:background="@android:drawable/btn_default"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/signin_layout_2_next_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_check_24dp" />
+
+</android.support.constraint.ConstraintLayout>

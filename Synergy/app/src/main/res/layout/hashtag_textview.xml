@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/hashtagExample1"
+    android:layout_width="125dp"
+    android:layout_height="35dp"
+    android:background="@drawable/background_hashtag"
+    android:lineSpacingExtra="8sp"
+    android:textAlignment="center"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
